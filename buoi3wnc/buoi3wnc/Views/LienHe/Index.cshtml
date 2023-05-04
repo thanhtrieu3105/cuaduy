@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<form style="text-align:right" action="/LienHe/Post" method="Post">
+    <table>
+        <tr>
+            <th>Quý khách quan tâm về</th>
+            <td>
+                <select name="cars" id="cars" style="width:80%">
+                    <option >Chọn chủ đề</option>
+                    <option value="Tư vấn">Tư vấn </option>
+                    <option value="Khiếu nại-Phản ánh">Khiếu nại-Phản ánh</option>
+                    <option value="Hợp tác với thế giới di động">Hợp tác với thế giới di động</option>
+                    <option value="Góp ý hợp tác">Góp ý hợp tác</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>Tiêu đề *</th>
+            <td><input type="text" id="tieude" name="tieude"></td>
+        </tr>
+        <tr>
+            <th>Nội dung</th>
+            <td><textarea rows="6" cols="22" name="noidung"></textarea></td>
+        </tr>
+        <tr>
+            <th>Họ và Tên *</th>
+            <td><input type="text" id="hoten" name="hoten"></td>
+        </tr>
+        <tr>
+            <th>Địa chỉ email</th>
+            <td><input type="text" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <th>Số điện thoại</th>
+            <td><input type="text" id="sdt" name="sdt"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><button type="submit">OK</button> </td>
+        </tr>
+    </table>
+</form>
+
+
